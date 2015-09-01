@@ -1,0 +1,37 @@
+{
+  "name": "jsboilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for js projects",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sharlon M. Balbalosa",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^11.0.1",
+    "browserify-shim": "^3.8.10",
+    "chai": "^3.2.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-jshint": "^1.11.2",
+    "gulp-less": "^3.0.3",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-mocha-phantomjs": "^0.10.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.4.0",
+    "mocha": "^2.3.0"
+  },
+  "browserify-shim": {
+    "jquery": "$"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  }
+}
