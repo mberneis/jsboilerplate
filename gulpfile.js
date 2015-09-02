@@ -5,6 +5,7 @@ var rename = require('gulp-rename');
 // Build Dependencies
 var browserify = require('gulp-browserify');
 var uglify = require('gulp-uglify');
+var babel = require('gulp-babel');
 
 // Style Dependencies
 var less = require('gulp-less');
@@ -32,6 +33,7 @@ gulp.task('lint-test', function() {
 
 gulp.task('browserify-client', ['lint-client'], function() {
   return gulp.src('client/index.js')
+    .pipe(babel())
     .pipe(browserify({
       insertGlobals: true
     }))
